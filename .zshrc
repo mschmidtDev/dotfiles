@@ -15,11 +15,21 @@ bindkey "[C" forward-word
 bindkey "^[a" beginning-of-line
 bindkey "^[e" end-of-line
 
+# Functions 
+function customTree() {
+		if [ $1 != "" ]
+		then
+				eza -a --color=always --icons=always --hyperlink --tree --level=$1
+		else
+				eza -a --color=always --icons=always --hyperlink --tree --level=3
+		fi
+}
+
 # Aliases
 alias ds="docker/sdk"
 alias ls="eza"
-alias ll="eza -alhF --icons"
-alias tree="eza --tree"
+alias ll="eza -alhF --long --color=always --icons=always --hyperlink"
+alias tree=customTree
 alias lg="lazygit"
 
 # Autoloading and Initialization-commands
