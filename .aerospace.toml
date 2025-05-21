@@ -170,14 +170,6 @@ if.app-id = 'company.thebrowser.Browser'
 run = "move-node-to-workspace B"
 
 [[on-window-detected]]
-if.app-id = 'com.github.wez.wezterm'
-run = "move-node-to-workspace P"
-
-[[on-window-detected]]
-if.app-id = 'com.todesktop.230313mzl4w4u92'
-run = "move-node-to-workspace P"
-
-[[on-window-detected]]
 if.app-id = 'com.tinyspeck.slackmacgap'
 run = "move-node-to-workspace C"
 
@@ -198,5 +190,5 @@ if.app-id = 'com.hnc.Discord'
 run = "move-node-to-workspace V"
 
 [[on-window-detected]]
-if.app-id = 'net.whatsapp.Whatsapp'
-run = "move-node-to-workspace V"
+if.app-id = 'com.tinyapp.TablePlus-setapp'
+run = "move-node-to-workspace D"

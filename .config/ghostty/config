@@ -4,7 +4,7 @@ font-size = 16
 font-thicken = true
 
 # Theme
-theme = dracula-van-helsing
+theme = dark:dracula-van-helsing,light:ayu_light
 macos-titlebar-style = hidden
 
 # Keybindings
