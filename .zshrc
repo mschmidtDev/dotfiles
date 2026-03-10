@@ -31,6 +31,7 @@ alias ls="eza"
 alias ll="eza -alhF --long --color=always --icons=always --hyperlink"
 alias tree=customTree
 alias lg="lazygit"
+alias bm="bulk-move"
 
 # Autoloading and Initialization-commands
 # autoload -Uz compinit && compinit
@@ -42,3 +43,12 @@ eval "$(zoxide init zsh)"
 eval "$(starship init zsh)"
 
 export GPG_TTY=$(tty)
+
+# bun completions
+[ -s "/Users/merlinschmidt/.bun/_bun" ] && source "/Users/merlinschmidt/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export ANTHROPIC_MODEL="claude-opus-4-5-20251101"
